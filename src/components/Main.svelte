@@ -3,7 +3,7 @@
     let steps = [
         {name: 'Holiday Planner AI', icon: 'fa-solid fa-compass', href: 'https://holidayplannerai.fly.dev/'},
         {name: 'Malicious Website Detection', icon: 'fa-solid fa-file-shield', href: 'https://huggingface.co/spaces/LaurentiuStancioiu/Malicious_website_detector'},
-        {name: 'Cluj Napoca Temperature Prediction', icon: 'fa-solid fa-temperature-high', href: 'https://github.com/LauraDiosan-CS/Laurentiu_Stancioiu_Cluj-Napoca_Temperature_Prediction'},
+        {name: 'Cluj Napoca Temperature Prediction', icon: 'fa-solid fa-temperature-high', href: 'https://huggingface.co/datasets/LaurentiuStancioiu/Cluj-Napoca-Weather-OpenWeather-data'},
         {name: 'Data Analysis in Rust', icon: 'fa-brands fa-rust', href: 'https://github.com/LaurentiuStancioiu/data_vizualization'},
         {name: 'RoadSense', icon: 'fa-solid fa-car', href: 'https://github.com/MohiRZV/AndroidSensorMQTT/tree/dev'}
     ];
@@ -59,7 +59,7 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-10">
             <Step step={steps[0]}>
-                <p> HolydayPlannerAI is a travel assistant that helps you with all information needed during a trip (weather, airports, attractions, hotels).
+                <p> HolidayPlannerAI is a travel assistant that helps you with all information needed during a trip (weather, airports, attractions, hotels).
                     Developed with <strong class="text-violet-400">Python, Solara, CSS, OpenAI API, Auth0</strong></p>
             </Step>
             <Step step={steps[1]}>
