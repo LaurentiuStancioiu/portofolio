@@ -21,7 +21,7 @@
         </a>
     </p>
     <p><i class="fa-solid fa-file-lines pr-2"></i>
-        <a class="text-violet-400" href="/LaurentiuStancioiuResume.pdf" download>
+        <a class="text-violet-400" href="/LaurentiuStancioiuResume.pdf" download data-sveltekit-reload>
             <b>Resume</b>
         </a>
     </p>
