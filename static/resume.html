@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Laurentiu Stancioiu — AI Engineer — Resume</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		:root {
+			--violet: #a78bfa;
+			--violet-dark: #7c3aed;
+			--violet-950: #2e1065;
+			--slate-950: #020617;
+			--slate-900: #0f172a;
+			--slate-700: #334155;
+			--slate-500: #64748b;
+			--slate-300: #cbd5e1;
+			--white: #ffffff;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			-webkit-print-color-adjust: exact;
+			print-color-adjust: exact;
+		}
+
+		html {
+			font-family: 'Nunito Sans', sans-serif;
+			color: var(--slate-300);
+			background: var(--slate-950);
+			font-size: 9.5px;
+			line-height: 1.45;
+		}
+
+		body {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 8px 16px;
+			background: var(--slate-950);
+		}
+
+		h1,
+		h2,
+		h3,
+		h4 {
+			font-family: 'Lato', sans-serif;
+			color: var(--white);
+		}
+
+		a {
+			color: var(--violet);
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		.header {
+			text-align: center;
+			padding-bottom: 8px;
+			border-bottom: 2px solid var(--violet-950);
+			margin-bottom: 10px;
+		}
+
+		.header h1 {
+			font-size: 19px;
+			font-weight: 700;
+			letter-spacing: 0.5px;
+		}
+
+		.header .title {
+			color: var(--violet);
+			font-family: 'Lato', sans-serif;
+			font-size: 12.5px;
+			margin-top: 1px;
+		}
+
+		.header .contact {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 9px;
+			margin-top: 5px;
+			font-size: 9.5px;
+		}
+
+		.header .contact a,
+		.header .contact span {
+			color: var(--slate-300);
+			display: inline-flex;
+			align-items: center;
+			gap: 4px;
+		}
+
+		.header .contact a:hover {
+			color: var(--violet);
+		}
+
+		.header .contact i {
+			vertical-align: middle;
+		}
+
+		.header .contact .hf-emoji {
+			position: relative;
+			top: 2px;
+			font-size: 11px;
+			line-height: 1;
+		}
+
+		section {
+			margin-bottom: 9px;
+		}
+
+		section h2 {
+			font-size: 11.5px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+			color: var(--violet);
+			padding-bottom: 3px;
+			margin-bottom: 5px;
+			border-bottom: 1px solid var(--violet-950);
+		}
+
+		.entry {
+			margin-bottom: 7px;
+		}
+
+		.entry:last-child {
+			margin-bottom: 0;
+		}
+
+		.entry-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+			flex-wrap: wrap;
+			gap: 4px;
+		}
+
+		.entry-header h3 {
+			font-size: 11.5px;
+			font-weight: 700;
+		}
+
+		.entry-header .dates {
+			font-size: 9.5px;
+			color: var(--slate-500);
+			font-family: 'Lato', sans-serif;
+			white-space: nowrap;
+		}
+
+		.entry .org {
+			font-size: 10px;
+			color: var(--violet);
+			font-weight: 600;
+		}
+
+		.entry .location {
+			font-size: 9.5px;
+			color: var(--slate-500);
+			font-style: italic;
+		}
+
+		.entry ul {
+			list-style: none;
+			padding-left: 0;
+			margin-top: 3px;
+		}
+
+		.entry ul li {
+			padding-left: 10px;
+			position: relative;
+			margin-bottom: 1px;
+		}
+
+		.entry ul li::before {
+			content: "▸";
+			color: var(--violet);
+			position: absolute;
+			left: 0;
+			font-size: 9px;
+		}
+
+		.two-col {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 12px;
+		}
+
+		.three-col {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 12px;
+		}
+
+		.tags {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 4px;
+		}
+
+		.tag {
+			background: var(--slate-900);
+			border: 1px solid var(--violet-950);
+			color: var(--slate-300);
+			padding: 2px 7px;
+			border-radius: 3px;
+			font-size: 9.5px;
+		}
+
+		.pub {
+			margin-bottom: 5px;
+		}
+
+		.pub:last-child {
+			margin-bottom: 0;
+		}
+
+		.pub .pub-title {
+			color: var(--white);
+			font-weight: 600;
+			font-size: 10px;
+		}
+
+		.pub .pub-meta {
+			font-size: 9px;
+			color: var(--slate-500);
+			margin-top: 1px;
+		}
+
+		.pub .pub-authors {
+			font-size: 9px;
+			color: var(--slate-500);
+		}
+
+		.skills-list {
+			list-style: none;
+		}
+
+		.skills-list li {
+			padding-left: 10px;
+			position: relative;
+			margin-bottom: 1px;
+		}
+
+		.skills-list li::before {
+			content: "▸";
+			color: var(--violet);
+			position: absolute;
+			left: 0;
+			font-size: 9px;
+		}
+
+		@media print {
+			html {
+				font-size: 9.8px;
+				background: var(--slate-950);
+			}
+
+			body {
+				padding: 8px 18px;
+				max-width: none;
+				background: var(--slate-950);
+			}
+
+			@page {
+				margin: 0;
+				background: var(--slate-950);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<h1>LAURENȚIU STĂNCIOIU</h1>
+		<div class="title">AI Engineer</div>
+		<div class="contact">
+			<a href="mailto:laurentiu.stancioiu@gmail.com"><i class="fa-solid fa-envelope"></i>
+				laurentiu.stancioiu@gmail.com</a>
+			<a href="https://laurentiu-stancioiu-portofolio.vercel.app/" target="_blank"><i
+					class="fa-solid fa-globe"></i> Portfolio</a>
+			<a href="https://github.com/LaurentiuStancioiu" target="_blank"><i class="fa-brands fa-github"></i>
+				GitHub</a>
+			<a href="https://www.linkedin.com/in/laurentiu-stancioiu/" target="_blank"><i
+					class="fa-brands fa-linkedin"></i> LinkedIn</a>
+			<a href="https://huggingface.co/LaurentiuStancioiu" target="_blank"><span class="hf-emoji">🤗</span>
+				HuggingFace</a>
+			<span><i class="fa-solid fa-location-dot"></i> Cluj-Napoca, Romania</span>
+		</div>
+	</div>
+
+	<section>
+		<h2>Summary</h2>
+		<p>AI Engineer specializing in NLP and tabular data, building production agents and LLM systems for enterprises
+			across Germany. Quick POCs, fast feedback loops, iterative development from POC to MVP to production.
+			Cloud-agnostic — AWS, Azure, GCP.</p>
+	</section>
+
+	<section>
+		<h2>Experience</h2>
+
+		<div class="entry">
+			<div class="entry-header">
+				<h3>Senior AI Consultant</h3>
+				<span class="dates">01/2026 — Present</span>
+			</div>
+			<div class="org">Bosch Service Solutions · Timișoara, Romania</div>
+			<ul>
+				<li>Building A2A-protocol compliant agents on Google Cloud (Cloud Run, BigQuery, Gemini, Terraform) for
+					enterprise customers.</li>
+				<li>Expanding into n8n-based workflow automation for enterprise agent orchestration.</li>
+			</ul>
+		</div>
+
+		<div class="entry">
+			<div class="entry-header">
+				<h3>AI Consultant</h3>
+				<span class="dates">04/2024 — 01/2026</span>
+			</div>
+			<div class="org">Bosch Service Solutions · deployed at Aleph Alpha · Timișoara, Romania</div>
+			<ul>
+				<li>Built an internal enterprise chatbot with a team of four, leveraging RAG and LLMs.</li>
+				<li>Worked on Creance.ai — AI-powered DORA compliance (PwC joint venture). Built pandas + Dagster
+					evaluation pipelines to govern LLM behavior. <a href="https://www.creance.ai/"
+						target="_blank">creance.ai</a></li>
+				<li>Developed an AI agent for sensitive technical documentation at a global chip manufacturer — 90%
+					search time reduction (OCR, Small LLMs, MCP).</li>
+				<li>Built a multi-agent system that researches power tools, analyzes Amazon reviews and web opinions,
+					then recommends new features (LangGraph, Firecrawl, Tavily). Won 1st place in an internal
+					competition.</li>
+				<li>Developed a security ticket classification and explanation system using LLMs.</li>
+				<li>Built a legal document classification system (Angular + Python) for a major European retailer, with
+					CI/CD via GitHub Actions.</li>
+				<li>Built a POC agent that reads SAP release notes via Playwright, interprets changelogs, and adjusts
+					SAP configurations when updates require it.</li>
+			</ul>
+		</div>
+
+		<div class="entry">
+			<div class="entry-header">
+				<h3>Junior Data Engineer → Data Engineer</h3>
+				<span class="dates">11/2022 — 04/2024</span>
+			</div>
+			<div class="org">RWS Group · Cluj-Napoca, Romania</div>
+			<ul>
+				<li>Developed TradosAI, a RAG-based AI assistant for user inquiries — built the data pipeline, AI
+					system, and internal content management platform.</li>
+				<li>Created a model combining transformers with traditional ML to route questions to the appropriate
+					forum, optimizing search accuracy.</li>
+				<li>Improved sentiment model deployment on AWS — 15× cost reduction while maintaining response time.
+				</li>
+				<li>Launched a microservice generating alt-text for images in community posts.</li>
+			</ul>
+		</div>
+
+		<div class="entry">
+			<div class="entry-header">
+				<h3>Research Intern</h3>
+				<span class="dates">08/2020 — 05/2022</span>
+			</div>
+			<div class="org">National Institute of Isotopic and Molecular Technologies · Cluj-Napoca, Romania</div>
+			<ul>
+				<li>Contributed to two published articles and a poster on Raman spectroscopy and computational molecular
+					analysis.</li>
+			</ul>
+		</div>
+	</section>
+
+	<div class="two-col">
+		<section>
+			<h2>Education</h2>
+			<div class="entry">
+				<div class="entry-header">
+					<h3>Bachelor of Engineering Physics</h3>
+					<span class="dates">2018 — 2022</span>
+				</div>
+				<div class="org">Applied Engineering Sciences</div>
+				<div class="location">Babeș-Bolyai University, Cluj-Napoca</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Languages</h2>
+			<ul class="skills-list">
+				<li>Romanian — Native</li>
+				<li>English — Advanced</li>
+			</ul>
+		</section>
+	</div>
+
+	<section>
+		<h2>Publications</h2>
+		<div class="two-col">
+			<div>
+				<div class="pub">
+					<div class="pub-title"><a
+							href="https://www.sciencedirect.com/science/article/abs/pii/S0022286021016355"
+							target="_blank">Vibrational spectral analysis of Sorafenib and its molecular docking study
+							compared to other TKIs</a></div>
+					<div class="pub-authors">L. Stancioiu, A.M.R. Gherman, I. Brezestean, N.E. Dina</div>
+					<div class="pub-meta">Journal of Molecular Structure · 2022</div>
+				</div>
+				<div class="pub">
+					<div class="pub-title"><a href="https://rrp.nipne.ro/2021/AN73604.pdf" target="_blank">Finding
+							Specific Spectral Features for SERS Response of Enterococcus Faecalis</a></div>
+					<div class="pub-authors">L. Stancioiu, A.M.R. Gherman, N.E. Dina</div>
+					<div class="pub-meta">Romanian Reports in Physics · 2021</div>
+				</div>
+			</div>
+			<div>
+				<div class="pub">
+					<div class="pub-title"><a href="https://pim.itim-cj.ro/2021/pages/t310.html"
+							target="_blank">Component identification of liquid mixtures by using computational
+							models</a></div>
+					<div class="pub-authors">L. Stancioiu, A.M.R. Gherman, N.E. Dina</div>
+					<div class="pub-meta">PIM International Conference · 2021 · Poster</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h2>Technology Stack</h2>
+		<div class="tags">
+			<span class="tag">Python</span>
+			<span class="tag">LangGraph</span>
+			<span class="tag">Dagster</span>
+			<span class="tag">A2A Protocol</span>
+			<span class="tag">MCP</span>
+			<span class="tag">Gemini</span>
+			<span class="tag">Google Cloud</span>
+			<span class="tag">Cloud Run</span>
+			<span class="tag">BigQuery</span>
+			<span class="tag">Terraform</span>
+			<span class="tag">AWS</span>
+			<span class="tag">Azure</span>
+			<span class="tag">Angular</span>
+			<span class="tag">Playwright</span>
+			<span class="tag">Firecrawl</span>
+			<span class="tag">Tavily</span>
+			<span class="tag">Pandas</span>
+			<span class="tag">Docker</span>
+			<span class="tag">GitHub Actions</span>
+			<span class="tag">n8n</span>
+			<span class="tag">SvelteKit</span>
+			<span class="tag">TypeScript</span>
+			<span class="tag">OCR</span>
+			<span class="tag">RAG</span>
+		</div>
+	</section>
+
+	<div class="three-col">
+		<section>
+			<h2>Skills</h2>
+			<ul class="skills-list">
+				<li>AI Agent Development</li>
+				<li>Multi-Agent Systems</li>
+				<li>LLM Evaluation</li>
+				<li>Document Processing</li>
+				<li>Client Consulting</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Certification</h2>
+			<ul class="skills-list">
+				<li>ML in Python with scikit-learn — Inria (2022)</li>
+				<li>SAS Visual Analytics for SAS Viya</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Volunteering</h2>
+			<ul class="skills-list">
+				<li>Leader of Beavers (2016—2023) — Romanian Scout Organization. Organized activities and trips for
+					children aged 7–10.</li>
+			</ul>
+		</section>
+	</div>
+</body>
+
+</html>

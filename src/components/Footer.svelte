@@ -3,7 +3,7 @@
     Connect with me &darr;
 </p>
 <div class="flex flex-col gap-4 items-center justify-center">
-    <p><i class="fa-solid fa-envelope pr-2"></i><b>Email:</b> laurentiu.stancioiu@gmail.com</p>
+    <p><i class="fa-solid fa-envelope pr-2"></i><b>Email:</b> <a class="text-violet-400" href="mailto:laurentiu.stancioiu@gmail.com">laurentiu.stancioiu@gmail.com</a></p>
     <p><i class="fa-brands fa-github pr-2"></i>
         <a class="text-violet-400" target="_blank" href="https://github.com/LaurentiuStancioiu">
             <b>Github</b>
@@ -18,6 +18,11 @@
         <span class="pr-2">🤗</span>
         <a class="text-violet-400" target="_blank" href="https://huggingface.co/LaurentiuStancioiu">
             <b>Hugging Face</b>
+        </a>
+    </p>
+    <p><i class="fa-solid fa-file-lines pr-2"></i>
+        <a class="text-violet-400" href="/LaurentiuStancioiuResume.pdf" download data-sveltekit-reload>
+            <b>Resume</b>
         </a>
     </p>
 </div>

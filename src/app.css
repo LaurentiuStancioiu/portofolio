@@ -1,18 +1,23 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-html{
-    scroll-behavior: smooth;
+@utility blueShadow {
+	box-shadow: 0 10px 30px -10px rgb(139 92 246 / 0.5);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
-}
+@layer base {
+	.Lato {
+		font-family: 'Lato', sans-serif;
+	}
 
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Lato', sans-serif;
+	html {
+		scroll-behavior: smooth;
+	}
+
+	* {
+		font-family: 'Nunito Sans', sans-serif;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Lato', sans-serif;
+	}
 }
